@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Optional: include extra sources for class scanning */
+@source "../node_modules/my-ui-library/src";
+
+@theme {
+  --color-primary: oklch(0.84 0.18 117.33);
+  --font-sans: "Inter", sans-serif;
+  --spacing: 0.5rem;
+}
+
+/* Example custom utility */
+@utility btn {
+  @apply text-white bg-primary px-4 py-2 rounded;
+}
